@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0077be, #00c6ff); /* Gradiente de fondo azul */
+    color: white;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 90%;
+    max-width: 400px;
+    backdrop-filter: blur(8px); /* Desenfoque en el fondo */
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la imagen */
+.image {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+/* Estilo de los botones */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #00332f;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .image {
+        width: 85%; /* Imagen ajustada a pantallas pequeñas */
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
